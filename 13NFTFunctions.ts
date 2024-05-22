@@ -85,16 +85,9 @@ await metaplex.nfts().verifyCollection({
     isSizedCollection: true
 })
 
-// const { nft } = await metaplex.nfts().create({
-//     uri: uri,
-//     name: "My NFT",
-//     sellerFeeBasisPoints: 100,
-//     collection: collectionNft.mintAddress
-// },{
-//     commitment: "finalized"
-// })
-
 console.log(nft.collection)
 console.log(
     `Token Mint: https://explorer.solana.com/address/${nft.address.toString()}?cluster=devnet`
-  )
+)
+
+// https://explorer.solana.com/address/8ts1Fwcf4pHkB7vG3dCivL3GPrZ1TUqhrvpTKX7pnxU6?cluster=devnet6?cluster=devnet
